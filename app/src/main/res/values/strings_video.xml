@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_capture_failed">Video capture failed. Please try again later.</string>
+
+    <string name="video_renamed_success">Video has been renamed.</string>
+    <string name="video_renamed_failed">Failed to rename video. Please try later.</string>
+</resources>

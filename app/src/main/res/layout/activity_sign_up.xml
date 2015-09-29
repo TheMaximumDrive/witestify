@@ -1,0 +1,133 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ims.witestify.SignUpActivity"
+    android:id="@+id/signUpLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/app_backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Input fields -->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sign_up_nameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sign_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true"
+            android:textColor="#e6e6e6"
+            android:hint="@string/signup_username"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sign_up_passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_nameWrapper"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#e6e6e6"
+            android:hint="@string/signup_password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sign_up_confirmPasswordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_passwordWrapper"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/sign_up_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#e6e6e6"
+            android:hint="@string/signup_confirm_password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sign_up_emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_confirmPasswordWrapper"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="#e6e6e6"
+            android:hint="@string/signup_email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Progress Bar -->
+
+    <TextView
+        android:id="@+id/txtSignUpInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/sign_in_info"
+        android:textColor="#fff"
+        android:textAllCaps="true"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"/>
+
+    <!-- Sign Up Button -->
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/app_colorPrimary"
+        android:text="@string/sign_up"
+        android:textColor="#fff"
+        android:onClick="registerButtonHandler"/>
+
+    <!-- Link to Sign In Screen -->
+
+    <Button
+        android:id="@+id/btn_linkToSignIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:text="@string/already_signed_up"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:onClick="registerLinkToLoginButtonHandler"/>
+
+</LinearLayout >

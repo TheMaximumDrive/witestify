@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_change_password">password</string>
+    <string name="settings_oldPassword_hint">Current password</string>
+    <string name="settings_newPassword_hint">New password (at least 8 characters)</string>
+    <string name="settings_confirmNewPassword_hint">Confirm new password</string>
+    <string name="save_changes">Save changes</string>
+</resources>

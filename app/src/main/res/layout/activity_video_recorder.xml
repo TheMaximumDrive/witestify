@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoRecorderActivity"
+    android:background="@android:color/black"
+    android:keepScreenOn="true" >
+
+    <SurfaceView
+        android:id="@+id/cameraSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/btn_recordVideo"
+        android:contentDescription="Record"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/ic_start_record"
+        android:background="@drawable/circle"
+        android:onClick="recordVideoButtonHandler"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_rotate_phone"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">witness and testify</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signup_username">Username</string>
+    <string name="signup_password">Password (at least 8 characters)</string>
+    <string name="signup_confirm_password">Confirm password</string>
+    <string name="signup_email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in_info">Signing in</string>
+    <string name="no_username">Fill in an username.</string>
+    <string name="no_password">Fill in a password.</string>
+    <string name="no_email">Fill in your email address.</string>
+    <string name="missing_fields">Fill in all fields to proceed.</string>
+    <string name="short_password">A password must at least consist of 8 characters.</string>
+    <string name="password_mismatch">The chosen password and the confirmation password are different.</string>
+    <string name="invalid_email">Please provide a valid email address.</string>
+    <string name="invalid_creds">Invalid credentials</string>
+    <string name="not_signed_up">Not a member? Sign up now.</string>
+    <string name="already_signed_up">Already signed up? Log in here.</string>
+    <string name="user_created">User has been successfully signed up.</string>
+</resources>
