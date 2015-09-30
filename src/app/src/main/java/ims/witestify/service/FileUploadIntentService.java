@@ -28,6 +28,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.ResultReceiver;
@@ -169,7 +170,11 @@ public class FileUploadIntentService extends IntentService {
                 .setColor(getResources().getColor(R.color.app_colorPrimary))
                 .setCategory(Notification.CATEGORY_PROGRESS)
                 .setPriority(Notification.PRIORITY_HIGH);
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            mBuilder.setOnlyAlertOnce(true)
+                    .setDefaults(Notification.DEFAULT_SOUND)
+                    .setVibrate(new long[] {1000 });
+        }
     }
 
     /**
